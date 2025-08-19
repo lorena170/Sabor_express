@@ -1,6 +1,6 @@
-# 🚀 Projetos Python Desktop
+# 🚀 Python Exemplos Desktop
 
-> Aplicações desktop modernas construídas com os frameworks GUI mais poderosos do Python
+> Exemplos de uso para desktop - Aplicações modernas com interface gráfica e terminal
 
 <div align="center">
 
@@ -14,7 +14,7 @@
 ## ⚡ Início Rápido
 
 ```bash
-git clone [URL_DO_REPO]
+git clone https://github.com/SesiSenaiDA2025/python_exemplos_desktop.git
 pip install customtkinter ttkbootstrap pillow
 python app.py  # Executar o sistema completo
 ```
@@ -27,6 +27,7 @@ python app.py  # Executar o sistema completo
 
 ### 🖥️ **Sistema de Cadastro Completo**
 Aplicação completa com autenticação, operações CRUD e interface moderna
+- **Pasta**: `com interface/7-py-cadastro`
 - **Arquivo**: `app.py`
 - **Recursos**: Sistema de login, banco SQLite, troca de temas
 - **Tech**: CustomTkinter + SQLite
@@ -36,6 +37,7 @@ Aplicação completa com autenticação, operações CRUD e interface moderna
 
 ### 🧮 **Calculadora Inteligente**
 Calculadora profissional com operações avançadas e temas
+- **Pasta**: `com interface/4-py-calculadora`
 - **Arquivo**: `calculadora.py`
 - **Recursos**: Operações científicas, seletor de temas, design moderno
 - **Tech**: ttkbootstrap + Math
@@ -47,6 +49,7 @@ Calculadora profissional com operações avançadas e temas
 
 ### 🔐 **Gerador de Senhas**
 Gerador de senhas seguras com comprimento personalizável
+- **Pasta**: `com interface/5-py-senha`
 - **Arquivo**: `senha.py`
 - **Recursos**: Geração aleatória, integração clipboard, validação
 - **Tech**: CustomTkinter + Random
@@ -56,9 +59,22 @@ Gerador de senhas seguras com comprimento personalizável
 
 ### 📐 **Calculadora Trigonométrica**
 Ferramenta educacional para cálculos trigonométricos
+- **Pasta**: `com interface/3-py-interface-trigonometria`
 - **Arquivo**: `interface3.py`
 - **Recursos**: Feedback visual, validação de entrada, suporte a imagens
 - **Tech**: Tkinter + PIL + Math
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+### 🖤 **Sistema de Restaurantes (Terminal)**
+Aplicação completa via linha de comando com banco de dados
+- **Pasta**: `sem interface/sabor-express_(Normal)`
+- **Arquivo**: `app.py`
+- **Recursos**: Menu interativo, CRUD completo, armazenamento SQLite
+- **Tech**: Python puro + SQLite
 
 </td>
 </tr>
@@ -86,36 +102,61 @@ Ferramenta educacional para cálculos trigonométricos
 ## 📁 Estrutura dos Projetos
 
 ```
-📦 Projetos
-├── 🔐 app.py              # Sistema completo com login
-├── 🧮 calculadora.py      # Calculadora avançada
-├── 🔑 senha.py            # Gerador de senhas
-├── 📐 interface3.py       # Ferramenta trigonométrica
-├── 📊 database.py         # Operações de banco
-└── 🎨 assets/             # Ícones e imagens
+📦 python_exemplos_desktop
+├── 📁 com interface/
+│   ├── 🔐 1-py-interface/              # Interface básica
+│   ├── 📊 2-py-interface-radio/        # Controles avançados
+│   ├── 🎨 3a-ttkbootstap/              # Interface moderna
+│   ├── 📐 3-py-interface-trigonometria/ # Calculadora trigonométrica
+│   ├── 🧮 4-py-calculadora/            # Calculadora completa
+│   ├── 🔑 5-py-senha/                  # Gerador de senhas
+│   ├── 💾 6-py-banco-dados/            # Sistema modular
+│   ├── 👥 6-py-banco-dados-(Alunos)/   # Versão para alunos
+│   └── 🖥️ 7-py-cadastro/              # Sistema completo
+└── 📁 sem interface/
+    ├── 🍽️ sabor-express_(Normal)/      # Sistema restaurantes básico
+    └── 🗄️ sabor-expess_(Grava)/        # Sistema com banco SQLite
 ```
 
 ## 🚀 Executar Qualquer Projeto
 
-Cada projeto é **independente** e pronto para executar:
-
+### Projetos com Interface Gráfica:
 ```bash
-python calculadora.py     # Calculadora
-python senha.py          # Gerador de Senhas  
-python app.py           # Sistema Completo
+cd "com interface/4-py-calculadora"
+python calculadora.py                    # Calculadora
+
+cd "../5-py-senha"  
+python senha.py                         # Gerador de Senhas
+
+cd "../7-py-cadastro"
+python app.py                          # Sistema Completo
+```
+
+### Projetos de Terminal:
+```bash
+cd "sem interface/sabor-express_(Normal)"
+python app.py                          # Sistema básico
+
+cd "../sabor-expess_(Grava)"
+python app.py                          # Sistema com banco
 ```
 
 ## 💡 Caminho de Aprendizado
 
-1. **Comece com**: `interface.py` - Conceitos básicos de GUI
-2. **Avance para**: `calculadora.py` - Layout e eventos
-3. **Avançado**: `app.py` - Arquitetura de aplicação completa
+### Para Interface Gráfica:
+1. **Comece com**: `1-py-interface/interface.py` - Conceitos básicos de GUI
+2. **Avance para**: `4-py-calculadora/calculadora.py` - Layout e eventos
+3. **Avançado**: `7-py-cadastro/app.py` - Arquitetura de aplicação completa
+
+### Para Aplicações Terminal:
+1. **Básico**: `sabor-express_(Normal)/app.py` - Lógica e estruturas
+2. **Avançado**: `sabor-expess_(Grava)/app.py` - Persistência de dados
 
 ---
 
 <div align="center">
 
-**Desenvolvido com ❤️ usando Python | Pronto para uso em produção**
+**Desenvolvido com ❤️ usando Python**
 
 [⭐ Favoritar este repo](.) • [🐛 Reportar problemas](.) • [🤝 Contribuir](.)
 
